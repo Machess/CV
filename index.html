@@ -1,5 +1,6 @@
 <!doctype html>
 <html lang="en">
+
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
@@ -7,10 +8,13 @@
   <link rel="stylesheet" href="web.css" />
   <meta name="description" content="Curriculum Vitae for Mac Tilma" />
 </head>
+
 <body class="work">
   <div class="page">
     <aside class="sidebar">
-      <div class="avatar" aria-hidden="true" data-initials="MT"></div>
+      <div class="avatar">
+        <img src="LinkedInpic.jfif" alt="Profile photo of Mac Tilma" />
+      </div>
       <h1 class="name">Mac Tilma</h1>
 
       <p class="tagline">
@@ -19,15 +23,25 @@
 
       <ul class="contact">
         <li class="contact__item">
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm1.2 3l6.1 4.2a2 2 0 0 0 2.3 0L19.7 7M5 18h14a1 1 0 0 0 1-1V8.6l-6.7 4.6a3.8 3.8 0 0 1-4.2 0L4 8.6V17a1 1 0 0 0 1 1z"/></svg>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm1.2 3l6.1 4.2a2 2 0 0 0 2.3 0L19.7 7M5 18h14a1 1 0 0 0 1-1V8.6l-6.7 4.6a3.8 3.8 0 0 1-4.2 0L4 8.6V17a1 1 0 0 0 1 1z" />
+          </svg>
           <a href="mailto:your@email.com">your@email.com</a>
         </li>
         <li class="contact__item">
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 3H3.55A.55.55 0 0 0 3 3.55v16.9c0 .3.25.55.55.55h9.1v-7.35H10.6V11h2.05V9.33c0-2.03 1.24-3.14 3.05-3.14.87 0 1.62.06 1.84.09v2.13h-1.26c-.99 0-1.18.47-1.18 1.16V11h2.36l-.31 2.1h-2.05V21h4.02c.3 0 .55-.25.55-.55V3.55c0-.3-.25-.55-.55-.55z"/></svg>
-          <a href="https://www.linkedin.com/in/mac-tilma-575a2522/" rel="noopener">linkedin.com/in/mac-tilma-575a2522</a>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M20.45 3H3.55A.55.55 0 0 0 3 3.55v16.9c0 .3.25.55.55.55h9.1v-7.35H10.6V11h2.05V9.33c0-2.03 1.24-3.14 3.05-3.14.87 0 1.62.06 1.84.09v2.13h-1.26c-.99 0-1.18.47-1.18 1.16V11h2.36l-.31 2.1h-2.05V21h4.02c.3 0 .55-.25.55-.55V3.55c0-.3-.25-.55-.55-.55z" />
+          </svg>
+          <a href="https://www.linkedin.com/in/mac-tilma-575a2522/"
+            rel="noopener">linkedin.com/in/mac-tilma-575a2522</a>
         </li>
         <li class="contact__item">
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
+            <path
+              d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" />
+          </svg>
           Akureyri, Iceland
         </li>
       </ul>
@@ -55,12 +69,8 @@
     <main class="content">
       <!-- Toggle (vanilla JS powers it) -->
       <div class="switch" aria-live="polite">
-        <button id="modeSwitch"
-                class="switch__btn"
-                type="button"
-                role="switch"
-                aria-checked="false"
-                aria-label="Toggle between Work and Private">
+        <button id="modeSwitch" class="switch__btn" type="button" role="switch" aria-checked="false"
+          aria-label="Toggle between Work and Private">
           <span class="switch__track" aria-hidden="true">
             <span class="switch__pill"></span>
             <span class="switch__label switch__label--left">Work</span>
@@ -176,11 +186,11 @@
 
   <!-- Vanilla JS: toggles Work/Private -->
   <script>
-    (function(){
+    (function () {
       const btn = document.getElementById('modeSwitch');
       const root = document.body;
 
-      function setMode(privateOn){
+      function setMode(privateOn) {
         root.classList.toggle('private', privateOn);
         root.classList.toggle('work', !privateOn);
         btn.setAttribute('aria-checked', privateOn ? 'true' : 'false');
@@ -209,4 +219,5 @@
     })();
   </script>
 </body>
+
 </html>
