@@ -13,7 +13,7 @@
   <div class="page">
     <aside class="sidebar">
       <div class="avatar">
-        <img src="LinkedInpic.jfif" alt="Profile photo of Mac Tilma" />
+        <img id="profilePhoto" src="LinkedInpic.jfif" alt="Profile photo of Mac Tilma" />
       </div>
       <h1 class="name">Mac Tilma</h1>
 
@@ -34,8 +34,7 @@
             <path
               d="M20.45 3H3.55A.55.55 0 0 0 3 3.55v16.9c0 .3.25.55.55.55h9.1v-7.35H10.6V11h2.05V9.33c0-2.03 1.24-3.14 3.05-3.14.87 0 1.62.06 1.84.09v2.13h-1.26c-.99 0-1.18.47-1.18 1.16V11h2.36l-.31 2.1h-2.05V21h4.02c.3 0 .55-.25.55-.55V3.55c0-.3-.25-.55-.55-.55z" />
           </svg>
-          <a href="https://www.linkedin.com/in/mac-tilma-575a2522/"
-            rel="noopener">Mac Tilma</a>
+          <a href="https://www.linkedin.com/in/mac-tilma-575a2522/" rel="noopener">Mac Tilma</a>
         </li>
         <li class="contact__item">
           <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
@@ -104,15 +103,18 @@
           </header>
           <ul class="job__list">
             <li>Owned <em>Localization services</em> improving cost and time efficiency.</li>
-            <li>Partnered with <em>multiple inhouse teams</em> to deliver <em>new localization solutions company wide</em> impacting speed of delivery between stakeholders and clients</li>
-            <li>Built custom solutions by integrating 3rd party software instead of using old legacy systems<em>Custom solution was made using C#, TS, AWS cloud services</em> to localize products faster, to lower the cost of localization and to improve the overall quality upon final delivery.</li>
+            <li>Partnered with <em>multiple inhouse teams</em> to deliver <em>new localization solutions company
+                wide</em> impacting speed of delivery between stakeholders and clients</li>
+            <li>Built custom solutions by integrating 3rd party software instead of using old legacy systems<em>Custom
+                solution was made using C#, TS, AWS cloud services</em> to localize products faster, to lower the cost
+              of localization and to improve the overall quality upon final delivery.</li>
           </ul>
         </article>
 
         <article class="job job--ghost">
           <header class="job__head">
             <div>
-              <h3 class="job__title">Siteimprove  - QA and Software engineer</h3>
+              <h3 class="job__title">Siteimprove - QA and Software engineer</h3>
               <div class="job__meta">• Remote / Akureyri</div>
             </div>
             <div class="job__time">[2018] – [2022]</div>
@@ -144,7 +146,8 @@
         <article class="proj">
           <h3 class="proj__title">Project</h3>
           <p class="proj__desc">
-            Using Java my team and I created a seat selection software for an airline company. The software allowed users to select their seats, view available options, and manage bookings.
+            Using Java my team and I created a seat selection software for an airline company. The software allowed
+            users to select their seats, view available options, and manage bookings.
           </p>
           <ul class="proj__facts">
             <li>Role: <em>development</em></li>
@@ -158,7 +161,8 @@
         <article class="proj">
           <h3 class="proj__title">Project</h3>
           <p class="proj__desc">
-            Using Java and Kotlin I created a mobile adventure book application. The app allowed users to read and interact with a story, making choices that affected the outcome.
+            Using Java and Kotlin I created a mobile adventure book application. The app allowed users to read and
+            interact with a story, making choices that affected the outcome.
           </p>
           <ul class="proj__facts">
             <li>Role: <em>development</em></li>
@@ -200,38 +204,45 @@
 
   <!-- Vanilla JS: toggles Work/Private -->
   <script>
-    (function () {
-      const btn = document.getElementById('modeSwitch');
-      const root = document.body;
+  (function(){
+    const btn = document.getElementById('modeSwitch');
+    const root = document.body;
+    const photo = document.getElementById('profilePhoto');
 
-      function setMode(privateOn) {
-        root.classList.toggle('private', privateOn);
-        root.classList.toggle('work', !privateOn);
-        btn.setAttribute('aria-checked', privateOn ? 'true' : 'false');
-        // show/hide sections (keep accessibility in mind)
-        document.querySelectorAll('.mode-work').forEach(el => {
-          el.hidden = !!privateOn;
-        });
-        document.querySelectorAll('.mode-private').forEach(el => {
-          el.hidden = !privateOn;
-        });
-      }
+    const workPhoto = "LinkedInpic.jfif";       // Work mode photo
+    const privatePhoto = "cv-private-pic.png";  // Private mode photo
 
-      // initial state (Work)
-      setMode(false);
+    function setMode(privateOn){
+      root.classList.toggle('private', privateOn);
+      root.classList.toggle('work', !privateOn);
+      btn.setAttribute('aria-checked', privateOn ? 'true' : 'false');
 
-      btn.addEventListener('click', () => {
-        const next = btn.getAttribute('aria-checked') !== 'true';
-        setMode(next);
+      // Show/hide sections
+      document.querySelectorAll('.mode-work').forEach(el => {
+        el.hidden = !!privateOn;
+      });
+      document.querySelectorAll('.mode-private').forEach(el => {
+        el.hidden = !privateOn;
       });
 
-      // keyboard support (Space/Enter already work on buttons; optional arrows)
-      btn.addEventListener('keydown', (e) => {
-        if (e.key === 'ArrowRight') setMode(true);
-        if (e.key === 'ArrowLeft') setMode(false);
-      });
-    })();
-  </script>
+      // Switch avatar photo
+      photo.src = privateOn ? privatePhoto : workPhoto;
+    }
+
+    // initial state (Work)
+    setMode(false);
+
+    btn.addEventListener('click', () => {
+      const next = btn.getAttribute('aria-checked') !== 'true';
+      setMode(next);
+    });
+
+    btn.addEventListener('keydown', (e) => {
+      if (e.key === 'ArrowRight') setMode(true);
+      if (e.key === 'ArrowLeft') setMode(false);
+    });
+  })();
+</script>
 </body>
 
 </html>
