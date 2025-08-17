@@ -1,0 +1,212 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Mac Tilma — CV</title>
+  <link rel="stylesheet" href="web.css" />
+  <meta name="description" content="Curriculum Vitae for Mac Tilma" />
+</head>
+<body class="work">
+  <div class="page">
+    <aside class="sidebar">
+      <div class="avatar" aria-hidden="true" data-initials="MT"></div>
+      <h1 class="name">Mac Tilma</h1>
+
+      <p class="tagline">
+        <span class="muted">Add your professional title</span>
+      </p>
+
+      <ul class="contact">
+        <li class="contact__item">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm1.2 3l6.1 4.2a2 2 0 0 0 2.3 0L19.7 7M5 18h14a1 1 0 0 0 1-1V8.6l-6.7 4.6a3.8 3.8 0 0 1-4.2 0L4 8.6V17a1 1 0 0 0 1 1z"/></svg>
+          <a href="mailto:your@email.com">your@email.com</a>
+        </li>
+        <li class="contact__item">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M20.45 3H3.55A.55.55 0 0 0 3 3.55v16.9c0 .3.25.55.55.55h9.1v-7.35H10.6V11h2.05V9.33c0-2.03 1.24-3.14 3.05-3.14.87 0 1.62.06 1.84.09v2.13h-1.26c-.99 0-1.18.47-1.18 1.16V11h2.36l-.31 2.1h-2.05V21h4.02c.3 0 .55-.25.55-.55V3.55c0-.3-.25-.55-.55-.55z"/></svg>
+          <a href="https://www.linkedin.com/in/mac-tilma-575a2522/" rel="noopener">linkedin.com/in/mac-tilma-575a2522</a>
+        </li>
+        <li class="contact__item">
+          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z"/></svg>
+          Akureyri, Iceland
+        </li>
+      </ul>
+
+      <section class="skills">
+        <h2 class="h2">Skills</h2>
+        <ul class="chips">
+          <li>Accessibility (WCAG)</li>
+          <li>SEO / Content QA</li>
+          <li>Web Analytics</li>
+          <li>HTML &amp; CSS</li>
+          <li>Stakeholder comms</li>
+        </ul>
+      </section>
+
+      <section class="links">
+        <h2 class="h2">Quick Links</h2>
+        <ul class="bullets">
+          <li><a href="#" aria-label="Portfolio URL">Portfolio</a></li>
+          <li><a href="#" aria-label="GitHub URL">GitHub</a></li>
+        </ul>
+      </section>
+    </aside>
+
+    <main class="content">
+      <!-- Toggle (vanilla JS powers it) -->
+      <div class="switch" aria-live="polite">
+        <button id="modeSwitch"
+                class="switch__btn"
+                type="button"
+                role="switch"
+                aria-checked="false"
+                aria-label="Toggle between Work and Private">
+          <span class="switch__track" aria-hidden="true">
+            <span class="switch__pill"></span>
+            <span class="switch__label switch__label--left">Work</span>
+            <span class="switch__label switch__label--right">Private</span>
+          </span>
+        </button>
+      </div>
+
+      <!-- ——— WORK VIEW ——— -->
+      <section class="summary mode-work">
+        <h2 class="h2">Profile</h2>
+        <p>
+          Results-oriented digital professional focused on raising web quality and
+          user experience. Experienced collaborating across marketing, product,
+          design, and engineering to improve content performance and accessibility.
+          <span class="muted">[TODO: add 2–3 quantified achievements]</span>
+        </p>
+      </section>
+
+      <section class="experience mode-work">
+        <h2 class="h2">Experience</h2>
+
+        <article class="job">
+          <header class="job__head">
+            <div>
+              <h3 class="job__title">[Your Role Title]</h3>
+              <div class="job__meta"><strong>Siteimprove</strong> • Remote / Akureyri</div>
+            </div>
+            <div class="job__time">[Start] – [End or Present]</div>
+          </header>
+          <ul class="job__list">
+            <li>Owned <em>[area/process]</em> improving <em>[metric]</em> by <strong>[X%]</strong>.</li>
+            <li>Partnered with <em>[team]</em> to deliver <em>[project]</em> impacting <strong>[N]</strong> pages.</li>
+            <li>Built dashboards using <em>[tools]</em> to monitor <em>[KPIs]</em>.</li>
+          </ul>
+        </article>
+
+        <article class="job job--ghost">
+          <header class="job__head">
+            <div>
+              <h3 class="job__title">[Company / Role]</h3>
+              <div class="job__meta">[Location]</div>
+            </div>
+            <div class="job__time">[Dates]</div>
+          </header>
+          <ul class="job__list">
+            <li>[Achievement bullet #1]</li>
+            <li>[Achievement bullet #2]</li>
+            <li>[Achievement bullet #3]</li>
+          </ul>
+        </article>
+      </section>
+
+      <section class="education mode-work">
+        <h2 class="h2">Education</h2>
+        <article class="edu">
+          <div class="edu__l">
+            <h3 class="edu__title">KEA — Copenhagen School of Design &amp; Technology</h3>
+            <div class="edu__meta">Copenhagen, Denmark</div>
+          </div>
+          <div class="edu__r">
+            <div class="edu__detail"><strong>[Programme]</strong></div>
+            <div class="edu__time">[Year] – [Year]</div>
+          </div>
+        </article>
+      </section>
+
+      <section class="projects mode-work">
+        <h2 class="h2">Selected Projects</h2>
+        <article class="proj">
+          <h3 class="proj__title">[Project / Case Study]</h3>
+          <p class="proj__desc">
+            What you built, why it mattered, and the outcome. Include a link if public.
+          </p>
+          <ul class="proj__facts">
+            <li>Role: <em>[e.g., Lead / IC]</em></li>
+            <li>Impact: <strong>[metric]</strong></li>
+            <li>Tech/Tools: <em>[tools]</em></li>
+          </ul>
+        </article>
+      </section>
+
+      <!-- ——— PRIVATE VIEW ——— -->
+      <section class="private-intro mode-private" hidden>
+        <h2 class="h2">Activities &amp; Hobbies</h2>
+        <p class="muted">A few things I enjoy outside of work.</p>
+      </section>
+
+      <section class="private-cards mode-private" hidden>
+        <article class="card">
+          <h3 class="card__title">Activities</h3>
+          <ul class="nice-list">
+            <li>Bouldering</li>
+            <li>Grilling</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <h3 class="card__title">Hobbies</h3>
+          <ul class="nice-list">
+            <li>Most boardgames</li>
+            <li>Miniature games</li>
+            <li>Dungeons &amp; Dragons (D&amp;D)</li>
+          </ul>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <footer class="print-hint" aria-hidden="true">
+    Tip: Print to PDF from your browser for a sharable file.
+  </footer>
+
+  <!-- Vanilla JS: toggles Work/Private -->
+  <script>
+    (function(){
+      const btn = document.getElementById('modeSwitch');
+      const root = document.body;
+
+      function setMode(privateOn){
+        root.classList.toggle('private', privateOn);
+        root.classList.toggle('work', !privateOn);
+        btn.setAttribute('aria-checked', privateOn ? 'true' : 'false');
+        // show/hide sections (keep accessibility in mind)
+        document.querySelectorAll('.mode-work').forEach(el => {
+          el.hidden = !!privateOn;
+        });
+        document.querySelectorAll('.mode-private').forEach(el => {
+          el.hidden = !privateOn;
+        });
+      }
+
+      // initial state (Work)
+      setMode(false);
+
+      btn.addEventListener('click', () => {
+        const next = btn.getAttribute('aria-checked') !== 'true';
+        setMode(next);
+      });
+
+      // keyboard support (Space/Enter already work on buttons; optional arrows)
+      btn.addEventListener('keydown', (e) => {
+        if (e.key === 'ArrowRight') setMode(true);
+        if (e.key === 'ArrowLeft') setMode(false);
+      });
+    })();
+  </script>
+</body>
+</html>
