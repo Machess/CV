@@ -176,6 +176,7 @@ p,li{ font-size: 15px; line-height:1.6; }
 /* ——— Switch (visuals only; behavior via JS) ——— */
 .switch{
   display:flex; justify-content:flex-end;
+  margin-bottom: 10px;
 }
 .switch__btn{
   border: none;
@@ -186,18 +187,18 @@ p,li{ font-size: 15px; line-height:1.6; }
 }
 .switch__track{
   position: relative;
-  width: 172px; height: 40px;
+  width: 172px; height: 42px;
   display:flex; align-items:center; justify-content:space-between;
-  gap: 12px;
   border-radius: 999px;
   border:1px solid var(--line);
   padding: 4px;
   box-shadow: var(--shadow);
   background: linear-gradient(180deg, var(--panel), color-mix(in srgb, var(--panel) 85%, transparent));
+  font-size: 14px;
 }
 .switch__pill{
   position:absolute; top:4px; left:4px;
-  width: 84px; height: 32px;
+  width: 84px; height: 34px;
   border-radius: 999px;
   background:
     radial-gradient(120% 100% at 100% 0%, var(--accent), transparent 55%),
@@ -208,12 +209,28 @@ p,li{ font-size: 15px; line-height:1.6; }
   transition: transform .28s cubic-bezier(.2,.7,.2,1);
 }
 .switch__label{
-  font-size: 14px; color: var(--muted);
-  position: relative; z-index: 1;
-  width: 50%; text-align: center; user-select: none;
+  flex:1;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  font-weight: 600;
+  transition: color .2s ease;
 }
-body.work .switch__label--left{ color: var(--ink); font-weight: 700; }
-body.private .switch__label--right{ color: var(--ink); font-weight: 700; }
+
+/* Default label colors */
+.switch__label{ color: var(--muted); }
+
+/* Work active */
+body.work .switch__label--left{
+  color: #fff;                     /* white for visibility */
+  text-shadow: 0 1px 4px rgba(0,0,0,.6);
+}
+/* Private active */
+body.private .switch__label--right{
+  color: #fff;
+  text-shadow: 0 1px 4px rgba(0,0,0,.6);
+}
+/* Move pill when private */
 body.private .switch__pill{ transform: translateX(84px); }
 
 /* ——— View toggling ——— */
