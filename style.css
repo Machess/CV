@@ -456,23 +456,20 @@ body {
    THEME TOGGLE
 ───────────────────────────────────────────── */
 .theme-toggle {
-  position: fixed;
-  top: 1.2rem;
-  right: 1.5rem;
-  z-index: 200;
-  display: flex;
+  display: inline-flex;
   align-items: center;
   gap: 8px;
-  background: var(--bg-card);
+  margin-top: 0.75rem;
+  background: transparent;
   border: 1px solid var(--border-mid);
   border-radius: 20px;
-  padding: 5px 10px 5px 8px;
+  padding: 4px 10px 4px 8px;
   cursor: pointer;
   font-family: var(--font-mono);
   font-size: 0.62rem;
   letter-spacing: 0.06em;
   color: var(--text-muted);
-  transition: border-color 0.2s, color 0.2s, background-color 0.25s;
+  transition: border-color 0.2s, color 0.2s;
   user-select: none;
 }
 
