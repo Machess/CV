@@ -1,248 +1,194 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Mac Tilma — CV</title>
-  <link rel="stylesheet" href="web.css" />
-  <meta name="description" content="Curriculum Vitae for Mac Tilma" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+<body>
 
-<body class="work">
-  <div class="page">
-    <aside class="sidebar">
-      <div class="avatar">
-        <img id="profilePhoto" src="LinkedInpic.jfif" alt="Profile photo of Mac Tilma" />
+  <div class="scanline"></div>
+
+  <main class="cv">
+
+    <!-- HEADER -->
+    <header class="cv__header">
+      <div class="cv__header-left">
+        <div class="cv__name">
+          <span class="cv__name-first">MAC</span>
+          <span class="cv__name-last">TILMA</span>
+        </div>
+        <div class="cv__title">Freelance Software Developer</div>
       </div>
-      <h1 class="name">Mac Tilma</h1>
-
-      <p class="tagline">
-        <span class="muted">Translating Tech Into Human Language</span>
-      </p>
-
-      <ul class="contact">
-        <li class="contact__item">
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2zm1.2 3l6.1 4.2a2 2 0 0 0 2.3 0L19.7 7M5 18h14a1 1 0 0 0 1-1V8.6l-6.7 4.6a3.8 3.8 0 0 1-4.2 0L4 8.6V17a1 1 0 0 0 1 1z" />
-          </svg>
-          <a href="mac_tilma@outlook.com">mac_tilma@outlook.com</a>
-        </li>
-        <li class="contact__item">
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M20.45 3H3.55A.55.55 0 0 0 3 3.55v16.9c0 .3.25.55.55.55h9.1v-7.35H10.6V11h2.05V9.33c0-2.03 1.24-3.14 3.05-3.14.87 0 1.62.06 1.84.09v2.13h-1.26c-.99 0-1.18.47-1.18 1.16V11h2.36l-.31 2.1h-2.05V21h4.02c.3 0 .55-.25.55-.55V3.55c0-.3-.25-.55-.55-.55z" />
-          </svg>
-          <a href="https://www.linkedin.com/in/mac-tilma-575a2522/" rel="noopener">Mac Tilma</a>
-        </li>
-        <li class="contact__item">
-          <svg class="ico" viewBox="0 0 24 24" aria-hidden="true">
-            <path
-              d="M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7zm0 9.5A2.5 2.5 0 1 1 12 6a2.5 2.5 0 0 1 0 5.5z" />
-          </svg>
-          Akureyri, Iceland
-        </li>
-      </ul>
-
-      <section class="skills">
-        <h2 class="h2">Skills</h2>
-        <ul class="chips">
-          <li>Web development</li>
-          <li>HTML &amp; CSS</li>
-          <li>Stakeholder comms</li>
-          <li>Accessibility (WCAG)</li>
-          <li>Project management</li>
-          <li>Modernizing legacy structures</li>
-        </ul>
-      </section>
-
-      <section class="links">
-        <h2 class="h2">Quick Links</h2>
-        <ul class="bullets">
-          <li><a href="https://www.linkedin.com/in/mac-tilma-575a2522/" aria-label="LinkedIn URL">LinkedIn</a></li>
-          <li><a href="https://github.com/Machess" aria-label="GitHub URL">GitHub</a></li>
-        </ul>
-      </section>
-    </aside>
-
-    <main class="content">
-      <!-- Toggle (vanilla JS powers it) -->
-      <div class="switch" aria-live="polite">
-        <button id="modeSwitch" class="switch__btn" type="button" role="switch" aria-checked="false"
-          aria-label="Toggle between Work and Private">
-          <span class="switch__track" aria-hidden="true">
-            <span class="switch__pill"></span>
-            <span class="switch__label switch__label--left">Work</span>
-            <span class="switch__label switch__label--right">Private</span>
+      <div class="cv__header-right">
+        <div class="cv__meta-row">
+          <span class="cv__meta-label">Location</span>
+          <span class="cv__meta-value">Akureyri, Iceland</span>
+        </div>
+        <div class="cv__meta-row">
+          <span class="cv__meta-label">Status</span>
+          <span class="cv__meta-value cv__status">
+            <span class="cv__status-dot"></span>Available
           </span>
-        </button>
+        </div>
+        <div class="cv__meta-row">
+          <span class="cv__meta-label">Stack</span>
+          <span class="cv__meta-value">Full-Stack · AI · Infra</span>
+        </div>
+        <div class="cv__meta-row">
+          <span class="cv__meta-label">Experience</span>
+          <span class="cv__meta-value">10+ years</span>
+        </div>
+      </div>
+    </header>
+
+    <!-- BODY -->
+    <div class="cv__body">
+
+      <!-- LEFT COLUMN -->
+      <div class="cv__col cv__col--main">
+
+        <section class="cv__section">
+          <h2 class="cv__section-title">Experience</h2>
+
+          <article class="exp" data-current="true">
+            <div class="exp__head">
+              <div class="exp__role">Freelance Software Developer</div>
+              <div class="exp__period">Sep 2024 — Present</div>
+            </div>
+            <div class="exp__company">Self-employed · Hybrid · Akureyri, Iceland</div>
+            <p class="exp__desc">Optimizing internal legacy infrastructure and delivering small-scale AI integration for clients.</p>
+            <div class="exp__tags">
+              <span class="tag">Infrastructure</span>
+              <span class="tag">AI Integration</span>
+              <span class="tag">Full-Stack</span>
+            </div>
+          </article>
+
+          <article class="exp exp--group">
+            <div class="exp__head">
+              <div class="exp__role">Siteimprove</div>
+              <div class="exp__period">2015 — Aug 2024 · 9 yrs 8 mos</div>
+            </div>
+            <div class="exp__company">Copenhagen, Denmark</div>
+
+            <div class="exp__subroles">
+              <div class="exp__subrole">
+                <div class="exp__subrole-head">
+                  <span class="exp__subrole-title">Software Engineer</span>
+                  <span class="exp__subrole-period">Feb 2018 – Aug 2024</span>
+                </div>
+                <p class="exp__desc">Test automation and product development across the Siteimprove platform.</p>
+                <div class="exp__tags">
+                  <span class="tag">Test Automation</span>
+                  <span class="tag">Product Dev</span>
+                </div>
+              </div>
+              <div class="exp__subrole">
+                <div class="exp__subrole-head">
+                  <span class="exp__subrole-title">Intern Developer</span>
+                  <span class="exp__subrole-period">Aug 2017 – Feb 2018</span>
+                </div>
+                <p class="exp__desc">Full-stack internship spanning Java &amp; C# backend through to various frontend frameworks.</p>
+                <div class="exp__tags">
+                  <span class="tag">Java</span>
+                  <span class="tag">C#</span>
+                  <span class="tag">Frontend</span>
+                </div>
+              </div>
+              <div class="exp__subrole">
+                <div class="exp__subrole-head">
+                  <span class="exp__subrole-title">Sales Representative, Netherlands</span>
+                  <span class="exp__subrole-period">2015 – Feb 2018</span>
+                </div>
+                <p class="exp__desc">Managed sales and translations for the Dutch market. Web governance software covering QA, Accessibility, Analytics, SEO and Performance.</p>
+              </div>
+            </div>
+          </article>
+
+          <article class="exp">
+            <div class="exp__head">
+              <div class="exp__role">International Flight Attendant</div>
+              <div class="exp__period">May 2014 — Feb 2015</div>
+            </div>
+            <div class="exp__company">Emirates · Full-time · Dubai, UAE</div>
+            <p class="exp__desc">Cabin crew on Airbus A380 and Boeing B777.</p>
+          </article>
+
+          <article class="exp">
+            <div class="exp__head">
+              <div class="exp__role">Financial Services Advisor</div>
+              <div class="exp__period">Oct 2013 — Mar 2014</div>
+            </div>
+            <div class="exp__company">ING Nederland · Alphen aan den Rijn / Gouda</div>
+            <p class="exp__desc">Certified to advise clients on financial products and services across ING's retail banking division.</p>
+          </article>
+        </section>
+
       </div>
 
-      <!-- ——— WORK VIEW ——— -->
-      <section class="summary mode-work">
-        <h2 class="h2">Profile</h2>
-        <p>
-          Results-oriented digital professional focused on raising web quality and
-          user experience. Experienced collaborating across marketing, product,
-          design, and engineering to improve content performance and accessibility.
-          <span class="muted">Experience in improving legacy and localization systems</span>
-        </p>
-      </section>
+      <!-- RIGHT COLUMN -->
+      <div class="cv__col cv__col--side">
 
-      <section class="experience mode-work">
-        <h2 class="h2">Most recent Experience</h2>
+        <section class="cv__section">
+          <h2 class="cv__section-title">Education</h2>
 
-        <article class="job">
-          <header class="job__head">
-            <div>
-              <h3 class="job__title"> Siteimprove - Techlead </h3>
-              <div class="job__meta"><strong>Siteimprove</strong> • Remote / Akureyri</div>
-            </div>
-            <div class="job__time">[2022] – [2024]</div>
-          </header>
-          <ul class="job__list">
-            <li>Managed <em>Localization services</em> and was responsible for lowering costs and shortening delivery times.</li>
-            <li>Partnered with <em> multiple inhouse teams</em> to deliver <em> a new localization solution impacting company
-                wide policy and </em> impacting speed of delivery between stakeholders and clients</li>
-            <li>Built custom a solution by integrating 3rd party software instead of using old legacy systems<em> This custom
-                solution was made using C#, TS, AWS cloud services</em> with the goal to localize products faster, to lower the cost
-              of localization and to improve the overall quality upon final delivery.</li>
-          </ul>
-        </article>
-
-        <article class="job job--ghost">
-          <header class="job__head">
-            <div>
-              <h3 class="job__title">Siteimprove - QA and Software engineer</h3>
-              <div class="job__meta">• Remote / Akureyri</div>
-            </div>
-            <div class="job__time">[2018] – [2022]</div>
-          </header>
-          <ul class="job__list">
-            <li>Worked on style guides and libraries for style components</li>
-            <li>Localization and Dutch translations</li>
-            <li>Worked on improving regression test workflows</li>
-          </ul>
-        </article>
-      </section>
-
-      <section class="education mode-work">
-        <h2 class="h2">Education</h2>
-        <article class="edu">
-          <div class="edu__l">
-            <h3 class="edu__title">KEA — Copenhagen School of Design &amp; Technology</h3>
-            <div class="edu__meta">Copenhagen, Denmark</div>
+          <div class="edu">
+            <div class="edu__degree">Computer Science</div>
+            <div class="edu__school">Erhvervsakademi København</div>
+            <div class="edu__meta">2015 – 2018 · Academic Degree</div>
+            <div class="edu__note">Full-stack web, Android &amp; Java</div>
           </div>
-          <div class="edu__r">
-            <div class="edu__detail"><strong>Software development</strong></div>
-            <div class="edu__time">2014 – 2016</div>
+
+          <div class="edu">
+            <div class="edu__degree">Japanese Studies</div>
+            <div class="edu__school">Leiden University</div>
+            <div class="edu__meta">2011 – 2012</div>
+            <div class="edu__note">Language &amp; culture program</div>
           </div>
-        </article>
-      </section>
 
-      <section class="projects mode-work">
-        <h2 class="h2">Airline seat selection software</h2>
-        <article class="proj">
-          <h3 class="proj__title">Project</h3>
-          <p class="proj__desc">
-            Using Java my team and I created a seat selection software for an airline company. The software allowed
-            users to select their seats, view available options, and manage bookings.
-          </p>
-          <ul class="proj__facts">
-            <li>Role: <em>development</em></li>
-            <li>Tech/Tools: <em>Java</em></li>
-          </ul>
-        </article>
-      </section>
+          <div class="edu">
+            <div class="edu__degree">Media, Marketing &amp; Publishing</div>
+            <div class="edu__school">Amsterdam University of Applied Sciences</div>
+            <div class="edu__meta">2007 – 2011 · Bachelor</div>
+            <div class="edu__note">Specialized in Marketing &amp; Financial management</div>
+          </div>
+        </section>
 
-      <section class="projects mode-work">
-        <h2 class="h2">Mobile adventure book</h2>
-        <article class="proj">
-          <h3 class="proj__title">Project</h3>
-          <p class="proj__desc">
-            Using Java and Kotlin I created a mobile adventure book application. The app allowed users to read and
-            interact with a story, making choices that affected the outcome.
-          </p>
-          <ul class="proj__facts">
-            <li>Role: <em>development</em></li>
-            <li>Tech/Tools: <em>Kotlin</em></li>
-          </ul>
-        </article>
-      </section>
+        <section class="cv__section">
+          <h2 class="cv__section-title">Skills</h2>
+          <div class="skills" id="skills-list">
+            <span class="tag tag--skill">Software Infrastructure</span>
+            <span class="tag tag--skill">Full-Stack Development</span>
+            <span class="tag tag--skill">AI / ML Integration</span>
+            <span class="tag tag--skill">Test Automation</span>
+            <span class="tag tag--skill">Java</span>
+            <span class="tag tag--skill">C#</span>
+            <span class="tag tag--skill">Frontend Frameworks</span>
+            <span class="tag tag--skill">Legacy Systems</span>
+          </div>
+        </section>
 
-      <!-- ——— PRIVATE VIEW ——— -->
-      <section class="private-intro mode-private" hidden>
-        <h2 class="h2">Activities &amp; Hobbies</h2>
-        <p class="muted">A few things I enjoy outside of work.</p>
-      </section>
+        <section class="cv__section">
+          <h2 class="cv__section-title">Languages</h2>
+          <div class="langs">
+            <div class="lang"><span class="lang__name">Dutch</span><span class="lang__level">Native</span></div>
+            <div class="lang"><span class="lang__name">English</span><span class="lang__level">Fluent</span></div>
+            <div class="lang"><span class="lang__name">Polish</span><span class="lang__level">Fluent</span></div>
+            <div class="lang"><span class="lang__name">Icelandic</span><span class="lang__level">Working</span></div>
+          </div>
+        </section>
 
-      <section class="private-cards mode-private" hidden>
-        <article class="card">
-          <h3 class="card__title">Activities</h3>
-          <ul class="nice-list">
-            <li>Bouldering</li>
-            <li>Grilling</li>
-          </ul>
-        </article>
+      </div>
+    </div>
 
-        <article class="card">
-          <h3 class="card__title">Hobbies</h3>
-          <ul class="nice-list">
-            <li>Boardgames</li>
-            <li>Miniature games</li>
-            <li>Dungeons &amp; Dragons (D&amp;D)</li>
-          </ul>
-        </article>
-      </section>
-    </main>
-  </div>
+    <footer class="cv__footer">
+      <span class="cv__footer-line" id="footer-ts"></span>
+    </footer>
 
-  <footer class="print-hint" aria-hidden="true">
-    Tip: Print to PDF from your browser for a sharable file.
-  </footer>
+  </main>
 
-  <!-- Vanilla JS: toggles Work/Private -->
-  <script>
-  (function(){
-    const btn = document.getElementById('modeSwitch');
-    const root = document.body;
-    const photo = document.getElementById('profilePhoto');
-
-    const workPhoto = "LinkedInpic.jfif";       // Work mode photo
-    const privatePhoto = "cv-private-pic.png";  // Private mode photo
-
-    function setMode(privateOn){
-      root.classList.toggle('private', privateOn);
-      root.classList.toggle('work', !privateOn);
-      btn.setAttribute('aria-checked', privateOn ? 'true' : 'false');
-
-      // Show/hide sections
-      document.querySelectorAll('.mode-work').forEach(el => {
-        el.hidden = !!privateOn;
-      });
-      document.querySelectorAll('.mode-private').forEach(el => {
-        el.hidden = !privateOn;
-      });
-
-      // Switch avatar photo
-      photo.src = privateOn ? privatePhoto : workPhoto;
-    }
-
-    // initial state (Work)
-    setMode(false);
-
-    btn.addEventListener('click', () => {
-      const next = btn.getAttribute('aria-checked') !== 'true';
-      setMode(next);
-    });
-
-    btn.addEventListener('keydown', (e) => {
-      if (e.key === 'ArrowRight') setMode(true);
-      if (e.key === 'ArrowLeft') setMode(false);
-    });
-  })();
-</script>
+  <script src="main.js"></script>
 </body>
-
 </html>
