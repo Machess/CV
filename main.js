@@ -11,7 +11,7 @@
     if (!el) return;
     const now = new Date();
     const iso = now.toISOString().replace('T', ' ').slice(0, 19);
-    el.textContent = `generated :: ${iso} UTC`;
+    el.textContent = `Mac Tilma build version :: ${iso} UTC`;
   }
 
   // ── Staggered fade-in on load ─────────────────
