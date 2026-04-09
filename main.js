@@ -74,7 +74,31 @@
     setTimeout(type, 300);
   }
 
-  // ── Console easter egg ───────────────────────
+  // ── Theme toggle ──────────────────────────────
+  function initThemeToggle() {
+    const root    = document.documentElement;
+    const btn     = document.getElementById('theme-toggle');
+    const label   = document.getElementById('theme-label');
+    if (!btn) return;
+
+    const STORAGE_KEY = 'cv-theme';
+    const saved = localStorage.getItem(STORAGE_KEY) || 'dark';
+
+    function applyTheme(theme) {
+      root.setAttribute('data-theme', theme);
+      label.textContent = theme.toUpperCase();
+      localStorage.setItem(STORAGE_KEY, theme);
+    }
+
+    applyTheme(saved);
+
+    btn.addEventListener('click', () => {
+      const current = root.getAttribute('data-theme') || 'dark';
+      applyTheme(current === 'dark' ? 'light' : 'dark');
+    });
+  }
+
+
   function consoleGreeting() {
     const styles = [
       'color: #00d4a0; font-size: 14px; font-family: monospace;',
@@ -90,6 +114,7 @@
     setFooterTimestamp();
     animateIn();
     initSkillTags();
+    initThemeToggle();
     typeEffect();
     consoleGreeting();
   });
